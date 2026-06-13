@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Study Pomodoro</h1>
+    <p class="subtitle">Stay focused, one session at a time</p>
+
+    <div class="timer-display" id="timerDisplay">25:00</div>
+
+    <div class="mode-buttons">
+      <button class="mode-btn active" data-mode="focus">Focus (25m)</button>
+      <button class="mode-btn" data-mode="short">Short Break (5m)</button>
+      <button class="mode-btn" data-mode="long">Long Break (15m)</button>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn" disabled>Pause</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="session-counter">
+      Sessions completed: <span id="sessionCount">0</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
